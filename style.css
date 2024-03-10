@@ -14,7 +14,7 @@ html {
 
 
 
-/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
 	
@@ -23,31 +23,57 @@ body {
 
 
 #container {
+	height:100%;
+}
+
+
+/* The two portions of the page in black, with yellow text */
+header, section {
+	background:black;
+	padding:25px;
+	color:yellow;
+}
+
+
+
+
+/* The three div's with cat background images */
+#cat1, #cat2, #cat3 {
+	/*height:700px;*/
+	height:100%;
+}
+
+
+#cat1 {
+	background:url('../img/cat1.jpg') fixed center no-repeat;
+	background-size:cover;
+}
+
+#cat2 {
+	background:url('../img/cat2.jpg') fixed center no-repeat;
+	background-size:cover;
 	
+	position:relative;
+}
+
+#cat3 {
+	background:url('../img/cat3.jpg') fixed center no-repeat;
+	background-size:cover;
 }
 
 
 
 
 
-
-
-/* Class for making YouTube/Vimeo videos responsive */
-
-figure.responsive {
-    position: relative;
-    padding-bottom: 56.25%;  /* 16:9 */
-    height: 0px;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-figure.responsive iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+#cat2 h1 {
+	color:white;
+	font-size:140px;
+	line-height:140px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-182px;
+	margin-top:-70px;
 }
 
 
@@ -66,30 +92,22 @@ hr {
 
 /* ========================================
 MEDIA QUERIES!
-You can adjust the min-width numbers below, and add as many new media queries as you need.
 ======================================== */
 
-/* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
 	
 	
 	
 	
-} /* closes 481px+ */
+} /* closes 768px+ */
 
 
 
-/* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-	
-	
-	
-} /* closes 769px+ */
 
-
-
-/* Minimum width for desktop screens. */
+/* New CSS for desktop sizes.
+You can change the pixel number below */
 @media all and (min-width: 1024px) {
 	
 	
