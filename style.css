@@ -45,7 +45,7 @@ header, section {
 
 
 #cat1 {
-	background:url('../img/cat1.jpg') fixed center no-repeat;
+	background:url('/img/Sinatra.png') fixed center no-repeat;
 	background-size:cover;
 }
 
