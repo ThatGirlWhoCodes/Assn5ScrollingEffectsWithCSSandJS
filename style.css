@@ -12,8 +12,27 @@ html {
 }
 
 
+header{
+	   /* position properties */
+	   position: fixed;
+	   width: 100%;
+	   top: 0;
+	   left: 0;
+	 
+	   /* flex properties */
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: baseline;
+	   flex-wrap: wrap;
+}
+header a{
+	text-decoration: none;
+	color: white;
+}
+ul{
+	text-align: end;
 
-
+}
 /* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
@@ -33,39 +52,39 @@ header, section {
 	padding:25px;
 	color:yellow;
 }
-
+footer{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
 
 
 
 /* The three div's with cat background images */
-#cat1, #cat2, #cat3 {
+#part1, #part2, #part3 {
 	/*height:700px;*/
 	height:100%;
 }
 
 
-#cat1 {
-	background:url('/img/Sinatra.png') fixed center no-repeat;
+#part1 {
+	background:url('/img/ItalianAmericanFlag.jpeg') fixed center no-repeat;
 	background-size:cover;
 }
 
-#cat2 {
-	background:url('../img/cat2.jpg') fixed center no-repeat;
+#part2 {
+	background:url('/img/iaHeritageMonth.png') fixed center no-repeat;
 	background-size:cover;
 	
 	position:relative;
 }
 
-#cat3 {
-	background:url('../img/cat3.jpg') fixed center no-repeat;
+#part3 {
+	background:url('/img/Sinatra.png') fixed center no-repeat;
 	background-size:cover;
 }
 
-
-
-
-
-#cat2 h1 {
+#part2 h1 {
 	color:white;
 	font-size:140px;
 	line-height:140px;
