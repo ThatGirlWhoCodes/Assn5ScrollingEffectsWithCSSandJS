@@ -88,21 +88,21 @@ footer{
 
 
 #part1 {
-	background:url('/img/italianflag.png') fixed center no-repeat;
+	background:url('img/italianflag.png') fixed center no-repeat;
 	background-size:cover;
 }
 
 #part2 {
-	background:url('/img/ColumbusClassic.png') fixed center no-repeat;
+	background:url('img/ColumbusClassic.png') fixed center no-repeat;
 	background-size:cover;
 }
 
 #part3 {
-	background:url('/img/LynchingAnnyversary.png') fixed center no-repeat;
+	background:url('img/LynchingAnnyversary.png') fixed center no-repeat;
 	background-size:cover;
 }
 #part4 {
-	background:url('/img/ColumbusClassic.png') fixed center no-repeat;
+	background:url('img/ColumbusClassic.png') fixed center no-repeat;
 	background-size:cover;
 	position:relative;
 
