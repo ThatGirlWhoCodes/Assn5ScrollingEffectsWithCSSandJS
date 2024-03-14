@@ -18,6 +18,13 @@ body {
 	
 }
 
+body a{
+	text-decoration: none;
+	color: white;
+}
+.menu-buttons a:hover{
+	color: red;
+}
 
 #container {
 	height:100%;
@@ -38,32 +45,39 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
+
 }
-.menu-flex-wrapper {
-	display: flex;
-	gap: 1rem;
-  }
   
   header a:hover {
-	color: salmon;
+	text-decoration: none;
+	color: green;
   }
-  
+  footer{
+	color: white;
+	text-align: center;
+  }
   #logo {
 	font-size: 2rem;
   }
   
   #p1{
-	width: 50%;
-  }
-  #p2{
 	float: right;
 	width: 50%;
+	margin: 5px;
+  }
+  #p2{
+	width: 50%;
+	margin: 5px;
   }
 
+#three ul a:hover{
+	color: yellow;
+}
 footer{
 	background-color: black;
+	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+	padding: 3px;
 }
 
 
@@ -96,15 +110,15 @@ footer{
 	background-size:cover;
 }
 
-#part2 h1 {
-	color:white;
-	font-size:140px;
+#part1 h1 {
+	color:black;
+	font-size:100px;
 	line-height:140px;
 	position:absolute;
-	left:50%;
+	left:35%;
 	top:50%;
 	margin-left:-182px;
-	margin-top:-70px;
+	margin-top:-100px;
 }
 
 
@@ -129,7 +143,16 @@ MEDIA QUERIES!
 /* New CSS for tablet sizes.
 You can change the pixel number below */
 @media all and (min-width: 768px) {
-	 
+	/* #part1 h1 {
+		color:black;
+		font-size:50px;
+		line-height:100px;
+		position:absolute;
+		left:35%;
+		top:50%;
+		margin-left:-182px;
+		margin-top:-100px;
+	} */
 	
 } /* closes 768px+ */
 
@@ -141,7 +164,16 @@ You can change the pixel number below */
 @media all and (min-width: 1024px) {
 	
 	
-	
+	#part1 h1 {
+		color:black;
+		font-size:100px;
+		line-height:140px;
+		position:absolute;
+		left:35%;
+		top:50%;
+		margin-left:-182px;
+		margin-top:-100px;
+	}
 	
 } /* closes 1024px+ */
 
