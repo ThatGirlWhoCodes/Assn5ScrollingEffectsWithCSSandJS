@@ -25,11 +25,6 @@
   
   <!-- <h2>Italian &amp; Italian&dash;American News</h2> -->
   <a id="logo" href="#">👑Audace MAG</a>
-  <a id="menu-toggle" href="#" aria-label="Open the menu">
-    <span class="patty" aria-hidden="true"></span>
-    <span class="patty" aria-hidden="true"></span>
-    <span class="patty" aria-hidden="true"></span>
-  </a>
   <nav id="menu">
     <div class="menu-buttons">
       <a href="index.html">Home</a>
@@ -61,6 +56,8 @@
   
     <p><b>Italian Heritage and Culture Month was just recognized on January 1, 2022, as a celebratory occasion, but only in Ohio.</b></p>
     <p>	On October 11, 2022, U.S. Congressman Josh Gottheimer (NJ-5) is working on resolving this issue with the U.S. House of Representatives. This lead will help urge those in the U.S. to honor Italian American Heritage and Culture, and recognize the contributions Italians have made to the U.S. “Italian immigrants who journeyed to America, and the generations of their families since, are a perfect example of what makes the United States the greatest country in the world. Very few Italian immigrants lived luxurious lives, but they never complained in their pursuit of the American dream. And if you take one look around, it’s an understatement to say that Italian Americans have succeeded in achieving a better life and making both America and our great state even better places to live,” said U.S. Congressman Josh Gottheimer (NJ-5).</p>
+    <p>On this day, March 14, is the anniversery of the largest mass lyching in America towards Italian&dash;Americans in New Orleans</p>
+    <p><b>In Memorium:</b></p>
     </section>
 
       <!-- image three div -->
@@ -75,7 +72,9 @@
         </ul>
         </section>
               <!-- image four div -->
-      <div id="part4"></div>
+      <div id="part4">
+        <h1>Mark your calender for this years Bocce Ball Tournement, stay tuned...</h1>
+      </div>
 <footer>
   <p>&copy; 2024 Gianna G Dimperio</p>
 </footer>
@@ -89,6 +88,32 @@
   <!-- Container for your jQuery code -->
   <script>
 $(document).ready(function() {
+
+$(window).scroll(function(){
+
+var windowPosition = $(window).scrollTop();
+
+if(windowPosition > 1300){
+$('section').addClass('white');
+}else{
+  $('section').removeClass('white');
+}
+
+var elementOffset = $('#one').offset().top
+var currentElementOffset=(elementOffset - windowPosition);
+if(currentElementOffset<40){
+$('#part1 h1').focusin();
+}else{
+  $('#part1 h1').focusout();
+}
+
+// if(windowPosition>1300){
+//   $('section').css('background', 'red');
+// }
+// else{
+//   ('section').css('background', 'white');
+// }
+});
 
 }); //close .ready()
 </script>
