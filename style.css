@@ -187,6 +187,15 @@ You can change the pixel number below */
 		margin-top:-100px;
 	}
 
+	#part4 h1{
+		color: white;
+		font-size: 30px;
+		position: absolute;
+		left: 80%;
+		right: 0;
+		top: 75%;
+	}
+	
 	
 } /* closes 1024px+ */
 
