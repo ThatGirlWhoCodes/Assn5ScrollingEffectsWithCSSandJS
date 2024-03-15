@@ -88,25 +88,41 @@
   
   <!-- Container for your jQuery code -->
   <script>
+
 $(document).ready(function() {
 
 $(window).scroll(function(){
 
 var windowPosition = $(window).scrollTop();
 
+//keyframe changes
 if(windowPosition > 1300){
-$('section').addClass('white');
+$('section').addClass('red');
 }else{
-  $('section').removeClass('white');
+  $('section').removeClass('red');
 }
 
-var elementOffset = $('#one').offset().top
-var currentElementOffset=(elementOffset - windowPosition);
-if(currentElementOffset<40){
-$('#part1 h1').focusin();
+//keyframe textChange
+if(windowPosition>1500){
+  $('h1').addClass('white');
 }else{
-  $('#part1 h1').focusout();
+  $('h1').removeClass('white');
 }
+
+//keyframe headerFooterColorChange
+if(windowPosition>1400){
+  $('header, footer').addClass('headerFooterchange');
+}else{
+  $('header, footer').removeClass('headerFooterchange');
+}
+
+// var elementOffset = $('#one').focus().top
+// var currentElementOffset=(elementOffset - windowPosition);
+// if(currentElementOffset<40){
+// $('#one').css('display', 'inline').focusin(2000);
+// }else{
+//   $('#one').focusout(2000);
+// }
 
 // if(windowPosition>1300){
 //   $('section').css('background', 'red');
@@ -116,6 +132,17 @@ $('#part1 h1').focusin();
 // }
 });
 
+$(window).scroll(function(){
+
+var windowPosition = $(window).scrollTop();
+$('one').focus(function(){
+    if(windowPosition>400){
+      $('section').css('display', 'none').fadeOut(2000);
+    }else{
+      $('section').css('display', 'none').fadeIn(2000);
+    }
+  })
+});
 }); //close .ready()
 </script>
 

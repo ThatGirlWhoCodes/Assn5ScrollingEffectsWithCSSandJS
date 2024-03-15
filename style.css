@@ -35,7 +35,7 @@ body a{
 header, section {
 	background:black;
 	padding:25px;
-	color:yellow;
+	color:white;
 }
 header{
 	display: flex;
@@ -71,7 +71,7 @@ header{
   }
 
 #three ul a:hover{
-	color: yellow;
+	color: #363E34;
 }
 footer{
 	background-color: black;
@@ -127,12 +127,37 @@ footer{
 	top: 75%;
 }
 
+b:hover{
+	color: #363E34;
+}
+
+/* section background change */
 @keyframes changes {
 from{background: black;}
-to{background: #363E34;}
+to{background: red;}
+}
+.red{
+	animation: changes 1.5s;
+	animation-fill-mode: forwards;
+}
+
+/* last image text change */
+@keyframes textChange {
+	from{color:white;}
+	to{color: black;}
 }
 .white{
-	animation: changes 1.5s;
+	animation: textChange 5s;
+	animation-fill-mode: backwards;
+}
+
+/* header/footer color change */
+@keyframes headerFooterColorChange{
+	from{background: black;}
+	to{background: red;}
+}
+.headerFooterchange{
+	animation: headerFooterColorChange;
 	animation-fill-mode: forwards;
 }
 
